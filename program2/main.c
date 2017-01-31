@@ -1,7 +1,6 @@
 #include <stdio.h>
-/* first comment */
-void f() { printf("sport"); }
-char*program="#include <stdio.h>%c/* first comment */%cvoid f() { printf(%csport%c); }%cchar*program=%c%s%c;%cint main(void) {%c/* second comment */%creturn!printf(program, 10, 10, 34, 34, 10, 34, program, 34, 10, 10, 10, 10);}%c";
-int main(void) {
-/* second comment */
-return!printf(program, 10, 10, 34, 34, 10, 34, program, 34, 10, 10, 10, 10);}
+#define decode(s,i,m,o,n,e) m##i##o##e
+#define begin decode(c,a,m,i,o,n)
+//comment
+#define F() int begin() { FILE*f = fopen("Grace_kid.c", "w");char*program="#include <stdio.h>%c#define decode(s,i,m,o,n,e) m##i##o##e%c#define begin decode(c,a,m,i,o,n)%c//comment%c#define F() int begin() { FILE*f = fopen(%cGrace_kid.c%c, %cw%c);char*program=%c%s%c;%cF() return!fprintf(f, program, 10, 10, 10, 10, 34, 34, 34, 34, 34, program, 34, 10, 10);}%c";
+F() return!fprintf(f, program, 10, 10, 10, 10, 34, 34, 34, 34, 34, program, 34, 10, 10);}
