@@ -11,7 +11,7 @@ name[6] = i + '0';
 pFile = fopen(name, "w");
 fprintf(pFile, p, i - 1, 10, 10, 10, 10, 10, 9, 34, p, 34, 10, 10, 10, 34, 34, 10, 39, 39, 10, 34, 34, 10, 10, 10, 34, 34, i - 1, 10, 10, 34, 34, 10, 39, 39, 10, 39, 39, 10, 10, 10, 10);
 fseek(pFile, 8, SEEK_SET);
-fprintf(pFile, "%d", 4);
+fprintf(pFile, "%d", i);
 fclose(pFile);
 char cmd[] = "gcc -Wall -Werror -Wextra Sully_X.c -o Sully_X";
 cmd[32] = i + '0';

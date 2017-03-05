@@ -1,4 +1,4 @@
-int i = 5;
+int i = 3;
 #include <stdio.h>
 #include <stdlib.h>
 int main(void) {
@@ -11,14 +11,14 @@ name[6] = i + '0';
 pFile = fopen(name, "w");
 fprintf(pFile, p, i - 1, 10, 10, 10, 10, 10, 9, 34, p, 34, 10, 10, 10, 34, 34, 10, 39, 39, 10, 34, 34, 10, 10, 10, 34, 34, i - 1, 10, 10, 34, 34, 10, 39, 39, 10, 39, 39, 10, 10, 34, 34, 10, i, 39, 39, 10, 10, 10, 10);
 fseek(pFile, 8, SEEK_SET);
-fprintf(pFile, "%d", i);
+fprintf(pFile, "%d", 2);
 fclose(pFile);
 char cmd[] = "gcc -Wall -Werror -Wextra Sully_X.c -o Sully_X";
 cmd[32] = i + '0';
 cmd[45] = i + '0';
 system(cmd);
-char name2[] = "./Sully_X";
-name2[8] = i + '0';
-system(name2);
+char name2[] = "./Sully_";
+name2[8] = 3 + '0';
+system(name);
 return 0;
 }
