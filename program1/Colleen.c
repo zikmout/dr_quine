@@ -1,8 +1,12 @@
 #include <stdio.h>
-/* first comment */
+/*
+	first comment
+*/
 int f() { return(0); }
-char*program="#include <stdio.h>%c/* first comment */%cint f() { return(0); }%cchar*program=%c%s%c;%cint main(void) {%c/* second comment */%cf();%creturn!printf(program, 10, 10, 10, 34, program, 34, 10, 10, 10, 10, 10);}%c";
+char*program="#include <stdio.h>%c/*%c%cfirst comment%c*/%cint f() { return(0); }%cchar*program=%c%s%c;%cint main(void) {%c/*%c%csecond comment%c*/%cf();%creturn!printf(program, 10, 10, 9, 10, 10, 10, 34, program, 34, 10, 10, 10, 9, 10, 10, 10, 10);}%c";
 int main(void) {
-/* second comment */
+/*
+	second comment
+*/
 f();
-return!printf(program, 10, 10, 10, 34, program, 34, 10, 10, 10, 10, 10);}
+return!printf(program, 10, 10, 9, 10, 10, 10, 34, program, 34, 10, 10, 10, 9, 10, 10, 10, 10);}
